@@ -1,0 +1,846 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #757575;
+    background: #ffffff;
+    font-family: 'open sans', sans-serif;
+    background: transparent;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #fbaf32;
+    font-family: 'Nunito';
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #fbaf32;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #719a0a;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn.custom-btn {
+    padding: 12px 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #fbaf32;
+    border: 2px solid #fbaf32;
+    border-radius: 5px;
+    transition: .5s;
+}
+:hover {
+    color: #fbaf32;
+    background: transparent;
+}
+
+.btn.custom-btn:focus,
+.form-control:focus,
+.custom-select:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 1366px;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #fbaf32;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 5px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+
+.back-to-top i {
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.back-to-top:hover {
+    background: #719a0a;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-size: inherit;
+    margin-left: 0;
+}
+
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    color: #fbaf32;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    transition: .5s;
+    
+}
+
+.navbar .navbar-brand span {
+    color: #719a0a;
+}
+
+.navbar .navbar-brand:hover {
+    color: #fbaf32;
+}
+
+.navbar .navbar-brand:hover span {
+    color: #fbaf32;
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+    max-height: 40px;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+    .navbar {
+        position: absolute;
+        width: 100%;
+        padding: 30px 60px;
+        background: transparent !important;
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: #fbaf32;
+    }
+    
+    .navbar.nav-sticky .navbar-brand {
+        color: #fbaf32;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link:focus {
+        padding: 10px 10px 8px 10px;
+        font-family: 'Nunito', sans-serif;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link,
+    .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
+        color: #666666;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: #fbaf32;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
+    .navbar-light.nav-sticky .navbar-nav .nav-link.active {
+        color: #fbaf32;
+    }
+
+@media (max-width: 991.98px) {   
+    .navbar {
+        padding: 15px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: #fbaf32;
+    }
+    
+    .navbar .navbar-nav {
+        margin-top: 15px;
+    }
+    
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+/******page header*****/
+.page-header-main h1{
+    margin-top: 20%;
+    color: #f8f9fa;
+    font-size: 59px;
+}
+.page-header-main h1 span{
+    color: #fbaf32;
+}
+.page-header-main{
+    position: relative;
+    margin-bottom: 45px;
+    padding: 150px 0 90px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(carousel-3.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.page-header{
+    position: relative;
+    margin-bottom: 45px;
+    padding: 150px 0 90px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(food\ image.jpeg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.page-header a{
+    position: relative;
+    padding: 0 12px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.page-header a:hover{
+    color: #ffffff;
+}
+.page-header a::after{
+    position: absolute;
+    content: "/";
+    width: 8px;
+    height: 8px;
+    top: -1px;
+    right: -7px;
+    text-align: center;
+    color: #fbaf32;
+}
+.page-header a:last-child::after {
+    display: none;
+}
+@media (max-width: 767.98px) {
+.page-header h2 {
+    font-size: 35px;
+}
+
+.page-header a {
+    font-size: 18px;
+}}
+/***page header end***********/
+
+.btn-div {
+    margin-left: 38%;
+    margin-top: 5%;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #fbaf32;
+    border: 2px solid #fbaf32;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.btn.custom-btn:hover {
+    color: #fbaf32;
+    background: transparent;
+}
+
+.table {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.selection{
+  height: 6vh;
+  width: 100%;
+  border-radius: 5px;
+}
+i{
+    height: 4vh;
+}
+.input-group{
+    margin-top: 4%;
+    background-color: #fbaf32;
+    color: #fbaf32;
+}
+.book-table .form-div .input-group-text i{
+   background: transparent;
+}
+.form-div{
+    background-color: #fbaf32;
+    border-radius: 10px;
+}
+input{
+    color   : #fbaf32;
+}
+.btn-book{
+    padding: 12px 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: white;
+    border: 2px solid #fbaf32;
+    transition: .5s;
+    text-decoration: none;
+}
+.booking .booking-form .btn.custom-btn {
+    width: 100%;
+    color: #fbaf32;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+}
+.book{
+    color: #fbaf32;
+}
+.picture{
+    margin-top: 4%;
+}
+.pic-1{
+    border-radius: 12px;
+    width: 100%;
+}
+.section-header {
+    margin-top: 30%;
+    font-weight: bold;
+    font-family: monospace;
+    margin-left: 15%;
+}
+.about-text{
+    font-weight: bold;
+    margin-left: 15%;
+}
+/**********************feature start***************/
+.feature {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 0 0;
+}
+
+.feature .section-header {
+    margin-bottom: 30px;
+}
+.feature .feature-text {
+    position: relative;
+    width: 100%;
+}
+
+.feature .feature-img {
+    border-radius: 15px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.feature .feature-img .col-6,
+.feature .feature-img .col-12 {
+    padding: 0;
+    overflow: hidden;
+}
+
+.feature .feature-img img {
+    width: 100%;
+    transition: .3s;
+}
+
+.feature .feature-img img:hover {
+    transform: scale(1.1);
+}
+.feature .feature-text .btn{
+    margin-bottom: 45px;
+   width: 100%;
+   margin-top: 15px;
+}
+.feature .feature-item{
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.feature-item p{
+    color: #fbaf32;
+}
+
+/***************feature end************/
+.food-item{
+    margin-top: 10%;
+    background-color: #f8f9fa;
+    top: -60px;
+    left: 30px;
+    z-index: 2;
+    padding: 25px 30px 30px 30px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: calc(100%-60%);
+    width: 100%;
+}
+.food .img-food{
+    margin-left: 38%;
+    background-color: wheat;
+}
+.food .header{
+    text-align: center;
+}
+.food .para-part{
+    color: #fbaf32;
+    margin-left: 8%;
+}
+.food .menu-link {
+   margin-left: 30%;
+   text-decoration: none;
+}
+/*menu css*/
+.menu {
+    position: relative;
+    padding: 45px 0 15px 0;
+}
+.menu .btn{
+    padding-left: 34px;
+    padding-right: 35px;
+    margin-left: 16px;
+    margin-top: 10px;
+    box-shadow: #666666;
+}
+
+.menu .menu-tab {
+    position: relative;
+}
+
+.menu .menu-tab img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.menu .menu-tab .nav.nav-pills .nav-link {
+    color: #ffffff;
+    background: #fbaf32;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.menu .menu-tab .tab-content {
+    padding: 30px 0 0 0;
+    background: transparent;
+}
+
+.menu .menu-tab .tab-content .container {
+    padding: 0;
+}
+
+.menu .menu-item {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.menu .menu-img {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.menu .menu-img img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.menu .menu-text {
+    width: calc(100% - 100px);
+}
+
+
+
+.menu .menu-text h3 strong {
+    display: inline-block;
+    float: right;
+    padding-left: 5px;
+    color: #fbaf32;
+    background: #ffffff;
+}
+
+.menu .menu-text p {
+    position: relative;
+    margin: 5px 0 0 0;
+    float: left;
+    display: block;
+}
+
+.menu .menu-bev{
+    width: 100%;
+}
+/*Team CSS*/
+
+.team{
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+.team .team-item{
+    position: inherit;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+.team .team-img{
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+.team .team-img img{
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    transform: scale(1.1);
+    transition: .3s;
+}
+.team .team-item:hover img{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.team .team-social{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+.team .team-social a{
+    position: relative;
+    margin-top: 100px;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #fbaf32;
+    opacity: 0;
+    text-decoration: none;
+}
+.team .team-social a:hover{
+    color: #ffffff;
+    background-color: #719a0a;
+}
+.team .team-item:hover .team-social {
+    background: rgba(256, 256, 256, .5);
+}
+
+.team .team-item:hover .team-social a:first-child {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s 0s;
+}
+.team .team-item:hover .team-social a:nth-child(2){
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .1s;
+}
+.team .team-item:hover .team-social a:nth-child(3){
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .1s;
+}
+.team .team-item:hover .team-social a:nth-child(4){
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .1s;
+}
+.team .team-text{
+    position: relative;
+    text-align: center;
+    padding: 25px 12px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+}
+.team .team-text h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: #fbaf32;
+}
+
+/*contact css*/
+
+.contact .sec-header {
+color: #fbaf32;
+}
+.contact h3{
+    color: #719a0a;
+    font-size: 20px;
+}
+.contact .contact-information{
+    background-color: rgba(0, 0, 0, .04);
+}
+.contact .contact-icon{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fbaf32;
+    border-radius: 50px;
+    margin-bottom: -1%;
+    margin-top: 8%;
+}
+.contact .contact-social{
+    padding-left: 4px;
+   
+}
+.contact .contact-txt{
+    position: relative;
+    width: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    padding-left: 64px;
+    margin-top: -16%;
+}
+.contact iframe{
+    width: 100%;
+    height: 380px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    margin-top: 6%;
+}
+.contact form{
+    margin-top: 6%;
+}
+.contact .control-group input{
+    padding: 15px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+.contact .contact-form textarea {
+    height: 150px;
+    padding: 8px 15px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+.blog{
+    position: relative;
+}
+.blog .blog-img{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+}
+.blog .blog-content{
+    position: relative;
+    top: -60px;
+    left: 30px;
+    z-index: 2;
+    padding: 25px 30px 30px 30px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: calc(100%-60%);
+    width: 90%;
+}
+.blog .blog-content h2.blog-title {
+    font-size: 22px;
+    font-weight: 700;
+}
+.blog .blog-meta{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    padding-left: 2px;
+}
+.blog .blog-meta i{
+    color: #fbaf32;
+}
+.blog .blog-text p{
+    color: #fbaf32;
+}
+.footer{
+    margin-top: 0%;
+    background: rgba(0, 0, 0, .04);
+    border-radius: 2px;
+}
+.footer row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left:-15px
+}
+.footer .col-md-6{
+    max-width: 50%;
+}
+.address{
+    color: #fbaf32;
+    font-size: 27px;
+    font-family: inherit;
+}
+.footer-contact{
+    color: #fbaf32;
+}
+.footer p{
+    margin-top: -2rem;
+    margin-left: 20px;
+    color: black;
+}
+.footer .footer-social{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+}
+.footer .footer-social a{
+    background-color: #fbaf32;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 22px;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 2px;
+    padding-top: 8px;
+    margin-left: 2%;
+}
+.footer .footer-social a:hover{
+    color: #ffffff;
+    background-color: #719a0a;
+}
+.footer .footer-link a{
+    display: block;
+    margin-bottom: 14px;
+    margin-top: 0px;
+    transition: .3s;
+    color: #454545;
+    text-decoration: none;
+}
+.footer .footer-link a::before{
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #fbaf32;
+}
+.footer .footer-link a:hover{
+   color: #fbaf32;
+}
+.footer .form {
+    position: relative;
+    width: 100%;
+}
+.footer .footer-newLetter .form input{
+    height: 60px;
+}
+.back-to-top{
+    position: fixed;
+    background: #fbaf32;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 5px;
+    color: white;
+    transition: background 0.5s;
+    z-index: 9;
+    
+}
+.back-to-top i{
+    color: #ffffff;
+    padding-top: 10px;
+}
+.back-to-top:hover{
+    background: #719a0a;
+}
+/****************/
+/***signup Css***/
+/***************/
+.signup .main{
+    position: relative;
+    margin-bottom: 45px;
+    padding: 150px 0 90px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(carousel-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  .main .sign-header {
+    font-family: fantasy;
+    color: #719a0a;
+  }
+  .sign-span{
+    color: #fbaf32;
+  }
+  .signup .form .sign-inp{
+    border-radius: 8px;
+  }
+.sign-inp input{
+    border-radius: 6px;
+    background-color: seashell;
+    margin-top: 20px;
+    padding: 13px;
+    border: none;   
+}
+.sign{
+    color: #fbaf32;
+    font-family: inherit;
+    font-weight: 600;1
+}
